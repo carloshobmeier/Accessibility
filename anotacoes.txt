@@ -11,3 +11,5 @@ colocar legendas explicativas nas imagens <figcaption>
 strong - par dar ênfase em texto (nos leitores de tela)
 
 
+teste
+
