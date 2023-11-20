@@ -10,5 +10,3 @@ colocar legendas explicativas nas imagens <figcaption>
 
 strong - par dar ênfase em texto (nos leitores de tela)
 
-Link para a hospedagem:
-https://carloshobmeier.github.io/Accessibility/

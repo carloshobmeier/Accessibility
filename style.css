@@ -48,7 +48,7 @@ section {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -74,35 +74,12 @@ li {
     margin-bottom: 5px;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-
 
 .high-contrast {
     background-color: #000000;
     color: #ffffff;
 }
 
-
-.audiodesc {
-    font-style: italic;
-    color: #666666;
-    margin-top: 0.5em;
-}
 
 
 #footerDiv {
@@ -134,3 +111,49 @@ footer a:hover {
     text-decoration: underline;
 }
 
+#degravacao {
+    font-size: 14px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 5px 0.5px #2222225d;
+}
+
+#imagem_home {
+    margin: 0 auto;
+    padding-left: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+li {
+    text-align: left;
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+}
+
+figure {
+    margin-bottom: 0px;
+}
+
+figcaption {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+caption {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+.container2 {
+    text-align: center;
+    align-items: center;
+}
