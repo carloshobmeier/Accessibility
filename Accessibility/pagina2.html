@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página 2 - Acessibilidade Digital</title>
+        <style>
+            /* Estilos CSS padrão */
+            body {
+                font-family: Arial, sans-serif;
+                color: #333;
+                background-color: #f8f8f8;
+                margin: 0;
+                padding: 20px;
+            }
+
+
+            h1 {
+                margin-top: 40px;
+            }
+
+            /* Botão de Alto Contraste */
+            #highContrastButton {
+                position: fixed;
+                top: 20px;
+                right: 50%;
+                padding: 10px;
+                background-color: #333;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+
+            #highContrastButton.high-contrast {
+                background-color: #fff !important; /* Adicionado !important para garantir prioridade */
+                color: #000 !important;
+            }
+
+            /* Estilos para o modo de alto contraste */
+            body.high-contrast {
+                background-color: #000;
+                color: #fff;
+            }
+
+            body.high-contrast nav a {
+               color: #fff;
+            }
+
+            body.high-contrast nav a:hover {
+               color: #fff;
+               font-weight: 700;
+            }
+
+
+            div {
+                display: flex;
+            }
+
+            #primeira_secao {
+                margin: 10px;
+                margin-top: 40px;
+            }
+
+            #segunda_secao {
+                margin: 10px;
+                margin-top: 20px;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+
+            #footerDiv {
+                background-color: #333;
+                color: #fff;
+                margin: 0 auto;
+                margin-left: -7px;
+                padding: 20px;
+                text-align: center;
+                margin-bottom: -8px;
+                width: 98%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            footer p {
+                margin: 0;
+                padding: 0px;
+            }
+
+            footer a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            footer a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="highContrastButton" onclick="toggleHighContrast()">Alto Contraste</button>
+        <script>
+            function toggleHighContrast() {
+                document.body.classList.toggle('high-contrast');
+                document.getElementById('highContrastButton').classList.toggle('high-contrast');
+            }
+        </script>
+
+        <div>
+            <section id="primeira_secao">
+                <img src="images/visual.jpg" alt="imagem de pessoa com deficiência visual feliz por poder fazer a leitura do site" width="400px">
+                <p>Navegação:</p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="pagina1.html">Texto Para Voz</a></li>
+                        <li><a href="pagina3.html">Vídeos Legendados</a></li>
+                        <li><a href="pagina4.html">Botões de Zoom</a></li>
+                        <li><a href="pagina5.html">Áudios Degravados</a></li>
+                    </ul>
+                </nav>
+            </section>
+        
+        <section id="segunda_secao">
+            <h1>Acessibilidade Visual - CLIQUE NO BOTÃO E VEJA A DIFERENÇA</h1>
+            <h2>Introdução</h2>
+            <p>
+            A acessibilidade digital desempenha um papel fundamental na criação de um ambiente online inclusivo, aberto a todos, independentemente de suas capacidades visuais. Nesse contexto, um elemento crucial é o botão de alto contraste, uma ferramenta que transcende simples preferências estéticas. Ao oferecer uma alternativa visualmente marcante, esse recurso não apenas facilita a navegação para usuários com deficiência visual, mas também promove uma experiência mais amigável e acessível para todos os visitantes.
+            </p>
+            <h2>Melhoria na legibilidade e visibilidade</h2>
+            <p>
+            O botão de alto contraste desempenha um papel essencial na melhoria da legibilidade e visibilidade do conteúdo online. Ao simples toque de um botão, o contraste entre o texto e o fundo é maximizado, proporcionando uma clareza visual que beneficia não apenas aqueles com deficiência visual parcial, mas também usuários em condições de luminosidade variável. Essa flexibilidade torna o conteúdo mais acessível em diferentes ambientes e dispositivos, promovendo uma experiência consistente para todos os usuários.
+            </p>
+            <h2>Experiência de usuário aprimorada</h2>
+            <p>
+            Ao garantir que todos os usuários possam personalizar a aparência do site de acordo com suas necessidades, cria-se um ambiente inclusivo que valoriza a diversidade de experiências. Essa abordagem não apenas atende aos padrões de acessibilidade, mas também contribui para uma experiência do usuário mais agradável e inclusiva, onde todos se sintam bem-vindos e capacitados ao explorar o conteúdo online.
+            </p>
+        </section>
+    </div>
+    <footer>
+        <div id="footerDiv">
+            <p>Desenvolvido por:  <a href="https://www.linkedin.com/in/carlos-hobmeier/" target="_blank">Carlos Hobmeier</a></p>
+            <p>Ano de Desenvolvimento: 2023</p>
+            <p>&copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    </body>
+</html>
