@@ -157,3 +157,60 @@ caption {
     text-align: center;
     align-items: center;
 }
+
+#primeira_secao {
+    margin: 10px;
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+#segunda_secao {
+    margin: 10px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+
+
+#highContrastButton {
+    position: fixed;
+    top: 20px;
+    right: 50%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#highContrastButton.high-contrast {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast nav a {
+   color: #fff;
+}
+
+body.high-contrast nav a:hover {
+   color: #fff;
+   font-weight: 700;
+}
+
+
+#botao1 {
+    left: 120px;
+    top: 15px;
+}
+
+#botao2 {
+    left: 310px;
+    top: 15px;
+}

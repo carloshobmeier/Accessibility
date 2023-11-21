@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Zoom</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/bus.ico" type="image/x-icon">
     
     <style>
@@ -16,19 +17,11 @@
         h1 {
             margin-top: 55px;
         }   
-
-        p {
-            text-align: justify;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        
         button {
             position: absolute;
             display: inline-block;
-            padding: 10px 20px;
+            padding: 10px 15px;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
@@ -47,22 +40,8 @@
         }
 
         .container {
-            margin: 0 auto;
-            margin-top: 10px;
             margin-left: 30px;
-            padding: 20px;
-            padding-top: 10px;
-            display: flex;
-        }
-
-        #botao1 {
-            left: 120px;
-            top: 15px;
-        }
-
-        #botao2 {
-            left: 310px;
-            top: 15px;
+            max-width: 1100px;
         }
 
         section {
@@ -70,37 +49,11 @@
         }
 
         #footerDiv {
-                background-color: #333;
-                color: #fff;
-                margin: 0 auto;
-                margin-left: -7px;
-                padding: 20px;
-                text-align: center;
-                margin-bottom: -8px;
                 width: 97.3%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 max-width: 100vw;
             }
-
-            footer p {
-                margin: 0;
-                padding: 0px;
-            }
-
-            footer a {
-                color: #fff;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-            footer a:hover {
-                text-decoration: underline;
-            }
-
-
     </style>
+
     <script>
         let fontSize = 16;
 
@@ -118,6 +71,7 @@
             document.body.style.fontSize = fontSize + 'px';
         }
     </script>
+
 </head>
 <body>
     <header id="botoes_zoom">
@@ -139,9 +93,9 @@
             <section id="imagem_home">
 
                 <figure>
-                    <img src="images/zoom.jpg" alt="imagem ilustra uma lupa dando zoom em itens pequenos" width="400px">
+                    <img src="images/zoom.jpg" alt="ilustração com uma lupa dando zoom em itens pequenos" width="400px">
                 </figure>
-                <figcaption>DESCRIÇÃO</figcaption>
+                <figcaption>Não segurando uma lupa ao redor de vários elementos pequenos</figcaption>
 
                 <p>Navegação:</p>
                 <ul>
@@ -158,7 +112,7 @@
         <footer>
             <div id="footerDiv">
                 <p>Desenvolvido por:  <a href="https://www.linkedin.com/in/carlos-hobmeier/" target="_blank">Carlos Hobmeier</a></p>
-                <p>Ano de Desenvolvimento: 2023</p>
+                <p>2023</p>
                 <p>&copy; Todos os direitos reservados</p>
             </div>
         </footer>

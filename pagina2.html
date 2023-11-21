@@ -4,103 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alto Contraste</title>
+        <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="images/bus.ico" type="image/x-icon">
         <style>
-            /* Estilos CSS padrão */
             body {
-                font-family: Arial, sans-serif;
-                color: #333;
-                background-color: #f8f8f8;
                 margin: 0;
                 padding: 20px;
             }
-
 
             h1 {
                 margin-top: 40px;
             }
 
-            /* Botão de Alto Contraste */
-            #highContrastButton {
-                position: fixed;
-                top: 20px;
-                right: 50%;
-                padding: 10px;
-                background-color: #333;
-                color: #fff;
-                border: none;
-                cursor: pointer;
-            }
-
-            #highContrastButton.high-contrast {
-                background-color: #fff !important; /* Adicionado !important para garantir prioridade */
-                color: #000 !important;
-            }
-
-            /* Estilos para o modo de alto contraste */
-            body.high-contrast {
-                background-color: #000;
-                color: #fff;
-            }
-
-            body.high-contrast nav a {
-               color: #fff;
-            }
-
-            body.high-contrast nav a:hover {
-               color: #fff;
-               font-weight: 700;
-            }
-
-
             div {
                 display: flex;
             }
 
-            #primeira_secao {
-                margin: 10px;
-                margin-top: 40px;
+            nav {
+                margin-left: 100px;
             }
 
-            #segunda_secao {
-                margin: 10px;
-                margin-top: 20px;
-            }
-
-            p {
-                text-align: justify;
-            }
-
-
-            #footerDiv {
-                background-color: #333;
-                color: #fff;
-                margin: 0 auto;
-                margin-left: -7px;
-                padding: 20px;
-                text-align: center;
-                margin-bottom: -8px;
-                width: 98%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            footer p {
-                margin: 0;
-                padding: 0px;
-            }
-
-            footer a {
-                color: #fff;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-            footer a:hover {
-                text-decoration: underline;
+            #p_nav {
+                margin-left: 100px;
             }
         </style>
+
     </head>
     <body>
         <button id="highContrastButton" onclick="toggleHighContrast()">Alto Contraste</button>
@@ -114,12 +42,12 @@
         <div>
             <section id="primeira_secao">
 
-            <figure>
-                <img src="images/visual.jpg" alt="imagem de pessoa com deficiência visual feliz por poder fazer a leitura do site" width="400px">
-            </figure>
-            <figcaption>DESCRIÇÃO</figcaption>
+                <figure>
+                    <img src="images/visual.jpg" alt="imagem de pessoa baixa visão feliz por poder fazer a leitura do site dada a opção de visualização com contraste adaptado" width="400px">
+                </figure>
+                <figcaption>Mulher com vendas nos olhos, retratando baixa visão</figcaption>
             
-                <p>Navegação:</p>
+                <p id="p_nav">Navegação:</p>
                 <nav>
                     <ul>
                         <li><a href="index.html">Página Inicial</a></li>
@@ -147,10 +75,11 @@
             </p>
         </section>
     </div>
+    
     <footer>
         <div id="footerDiv">
             <p>Desenvolvido por:  <a href="https://www.linkedin.com/in/carlos-hobmeier/" target="_blank">Carlos Hobmeier</a></p>
-            <p>Ano de Desenvolvimento: 2023</p>
+            <p>2023</p>
             <p>&copy; Todos os direitos reservados</p>
         </div>
     </footer>
